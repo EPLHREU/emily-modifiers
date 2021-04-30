@@ -23,17 +23,35 @@ There are 3 main sections:
 Character input is based on fingerspelling and takes up the whole left hand and vowels.
 As I use magnum, and expect most others to use plover, you can specify exactly how fingerspelling works in your dictionary with a variable. 
 
+| fingerspelling pattern                | letter  |
+|---------------------------------------|---------|
+| ![Letter S Diagram](img/letter-s.png) | S       |
+| ![Letter V Diagram](img/letter-v.png) | V       |
+
 When `AO` is held, as that's not valid fingerspelling, the bottom row of the left hand (`SKWR`) will turn into binary number input from 0 to 9.
+
+| binary number pattern                 | number  |
+|---------------------------------------|---------|
+| ![Number 1 Diagram](img/number-1.png) | 1       |
+| ![Number 2 Diagram](img/letter-2.png) | 2       |
+| ![Number 9 Diagram](img/letter-9.png) | 9       |
+
 If `TP` (`F`) is also held, the number input will specify function keys, for the likes of `alt-F4`.
 
-![Numbers Layout Diagram](img/numbers.png)
-
-![Function Keys Layout Diagram](img/function.png)
+| binary function number pattern | function |
+|--------------------------------|----------|
+| ![F5 Diagram](img/F5.png)      | F5       |
+| ![F11 Diagram](img/F11.png)    | F11      |
 
 ### switcher
 
 when `*` is used, the left bank will switch from fingerspelling letters, to a reflected and modified symbol dictionary. 
 This will apply modifiers to all sorts of symbols in addition to just the letters and numbers. 
+
+| symbol pattern                                 | output |
+|------------------------------------------------|--------|
+| ![Exclamation Pattern Diagram](img/exclam.png) | `!`    |
+| ![Hash Pattern Diagram](img/hash.png)          | `#`    |
 
 ### modifiers 
 
