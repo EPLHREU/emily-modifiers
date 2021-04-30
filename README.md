@@ -28,7 +28,7 @@ If `TP` (`F`) is also held, the number input will specify function keys, for the
 
 ![Numbers Layout Diagram](img/numbers.png)
 
-![Function Keys Layout Diagram](img/functions.png)
+![Function Keys Layout Diagram](img/function.png)
 
 ### switcher
 
