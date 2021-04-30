@@ -1,4 +1,4 @@
-# Emily's Symbol Dictionary
+# Emily's Modifier Dictionary
 import re
 
 # define your starters here
