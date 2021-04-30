@@ -33,8 +33,8 @@ When `AO` is held, as that's not valid fingerspelling, the bottom row of the lef
 | binary number pattern                 | number  |
 |---------------------------------------|---------|
 | ![Number 1 Diagram](img/number-1.png) | 1       |
-| ![Number 2 Diagram](img/letter-2.png) | 2       |
-| ![Number 9 Diagram](img/letter-9.png) | 9       |
+| ![Number 2 Diagram](img/number-2.png) | 2       |
+| ![Number 9 Diagram](img/number-9.png) | 9       |
 
 If `TP` (`F`) is also held, the number input will specify function keys, for the likes of `alt-F4`.
 
@@ -64,7 +64,12 @@ This will apply modifiers to all sorts of symbols in addition to just the letter
 
 These can all be used to add on the relevant modification as needed, with no limit.
 
-![Modifier Keys Layout Diagram](img/mods.png)
+| modifier pattern                            | modifier  |
+|---------------------------------------------|-----------|
+| ![Control Pattern Diagram](img/control.png) | `control` |
+| ![Shift Pattern Diagram](img/shift.png)     | `shift`   |
+| ![Alt Pattern Diagram](img/alt.png)         | `alt`     |
+| ![super Pattern Diagram](img/super.png)     | `super`   |
 
 ### unique ending
 
