@@ -1,7 +1,7 @@
 # Emily's Modifier Dictionary
 import re
 
-# define your starters here
+# define your ender here
 uniqueEnders = ["LTZ"]
 
 # select the fingerspelling dictionary, i use magnum, but expect most others to use plover
@@ -170,7 +170,7 @@ def lookup(chord):
         (shape, number, vowel2) = secondMatch.groups()
 
         # AO is unused in finger spelling, thus used to disginguish numerical input
-        if number == ("AO"):
+        if number == "AO" and vowel2 == "":
 
             # left-hand bottom row conuts in binary for numbers 0-9
             count = 0
@@ -199,12 +199,12 @@ def lookup(chord):
                 character = str(count)
         else:
             # finger spelling input
-            entry = pattern + number + vowel2
+            entry = shape + number + vowel2
 
             # check for entry in dictionary 
             if entry not in spelling[spellingMethod]:
                 raise KeyError
-            character = spelling[spellingMethod][pattern+number+vowel2]
+            character = spelling[spellingMethod][entry]
 
     # accumulate list of modifiers to be added to the character
     # may need to reorder?
