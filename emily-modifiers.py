@@ -45,7 +45,7 @@ symbols = {
         "TR"    : ["tab", "delete", "backspace", "escape"],
         "KPWR"  : ["up", "left", "right", "down"],
         "KPWHR" : ["pageup", "end", "home", "pagedown"],
-        ""      : ["escape", "tab", "return", "space"],
+        ""      : ["", "tab", "return", "space"],
 
         # typable symbols
         "HR"     : ["exclam", "", "notsign", "exclamdown"],
@@ -176,6 +176,10 @@ def lookup(chord):
             if entry not in spelling:
                 raise KeyError
             character = spelling[entry]
+
+            # if there is no entry, pass the error
+            if character == "":
+                raise KeyError
 
     # accumulate list of modifiers to be added to the character
     # may need to reorder?
