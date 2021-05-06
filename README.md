@@ -126,7 +126,7 @@ Additionally, while using the switcher for symbol specification, the `A` and `O`
  | ![arrow Pattern Diagram](img/s-arrow.png) | `up`, `left`, `right`, `down` | `up`, `left`, `right`, `down` |
  | ![page Pattern Diagram](img/s-page.png) | `pageup`, `end`, `home`, `pagedown` | `pageup`, `end`, `home`, `pagedown` |
  | ![blank Pattern Diagram](img/s-blank.png) | `escape`, `tab`, `return`, ` ` | `escape`, `tab`, `return`, `space` |
- | ![exclam Pattern Diagram](img/s-blank.png) | `!`, , `¬`, `¡` | `exclam`, , `notsign`, `exclamdown` |
+ | ![exclam Pattern Diagram](img/s-exclam.png) | `!`, , `¬`, `¡` | `exclam`, , `notsign`, `exclamdown` |
  | ![quotedbl Pattern Diagram](img/s-quotedbl.png) | `"`, , ,  | `quotedbl`, , ,  |
  | ![numbersign Pattern Diagram](img/s-numbersign.png) | `#`, `®`, `©`,  | `numbersign`, `registered`, `copyright`,  |
  | ![dollar Pattern Diagram](img/s-dollar.png) | `$`, `€`, `¥`, `£` | `dollar`, `euro`, `yen`, `sterling` |
