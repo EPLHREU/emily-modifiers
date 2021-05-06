@@ -81,6 +81,7 @@ When `AO` is held, as that's not valid fingerspelling, the bottom row of the lef
 
 | binary number pattern                 | number  |
 |---------------------------------------|---------|
+| ![Number 0 Diagram](img/0.png)        | `0`     |
 | ![Number 1 Diagram](img/1.png)        | `1`     |
 | ![Number 2 Diagram](img/2.png)        | `2`     |
 | ![Number 3 Diagram](img/3.png)        | `3`     |
@@ -123,27 +124,27 @@ Additionally, while using the switcher for symbol specification, the `A` and `O`
  | ![arrow Pattern Diagram](img/s-arrow.png) | `up`, `left`, `right`, `down` | `up`, `left`, `right`, `down` |
  | ![page Pattern Diagram](img/s-page.png) | `pageup`, `end`, `home`, `pagedown` | `pageup`, `end`, `home`, `pagedown` |
  | ![blank Pattern Diagram](img/s-blank.png) | `escape`, `tab`, `return`, ` ` | `escape`, `tab`, `return`, `space` |
- | ![exclam Pattern Diagram](img/s-blank.png) | `!`, ``, `¬`, `¡` | `exclam`, ``, `notsign`, `exclamdown` |
- | ![quotedbl Pattern Diagram](img/s-quotedbl.png) | `"`, ``, ``, `` | `quotedbl`, ``, ``, `` |
- | ![numbersign Pattern Diagram](img/s-numbersign.png) | `#`, `®`, `©`, `` | `numbersign`, `registered`, `copyright`, `` |
+ | ![exclam Pattern Diagram](img/s-blank.png) | `!`, , `¬`, `¡` | `exclam`, , `notsign`, `exclamdown` |
+ | ![quotedbl Pattern Diagram](img/s-quotedbl.png) | `"`, , ,  | `quotedbl`, , ,  |
+ | ![numbersign Pattern Diagram](img/s-numbersign.png) | `#`, `®`, `©`,  | `numbersign`, `registered`, `copyright`,  |
  | ![dollar Pattern Diagram](img/s-dollar.png) | `$`, `€`, `¥`, `£` | `dollar`, `euro`, `yen`, `sterling` |
- | ![percent Pattern Diagram](img/s-dollar.png) | `%`, ``, ``, `` | `percent`, ``, ``, `` |
- | ![ampersand Pattern Diagram](img/s-ampersand.png) | `&`, ``, ``, `` | `ampersand`, ``, ``, `` |
+ | ![percent Pattern Diagram](img/s-dollar.png) | `%`, , ,  | `percent`, , ,  |
+ | ![ampersand Pattern Diagram](img/s-ampersand.png) | `&`, , ,  | `ampersand`, , ,  |
  | ![parenleft Pattern Diagram](img/s-parenleft.png) | `(`, `<`, `[`, `{` | `parenleft`, `less`, `bracketleft`, `braceleft` |
  | ![parenright Pattern Diagram](img/s-parenright.png) | `)`, `>`, `]`, `}` | `parenright`, `greater`, `bracketright`, `braceright` |
- | ![asterisk Pattern Diagram](img/s-asterisk.png) | `*`, `§`, ``, `×` | `asterisk`, `section`, ``, `multiply` |
- | ![plus Pattern Diagram](img/s-plus.png) | `+`, `¶`, ``, `±` | `plus`, `paragraph`, ``, `plusminus` |
- | ![comma Pattern Diagram](img/s-comma.png) | `,`, ``, ``, `` | `comma`, ``, ``, `` |
- | ![minus Pattern Diagram](img/s-minus.png) | `-`, ``, ``, `` | `minus`, ``, ``, `` |
- | ![period Pattern Diagram](img/s-period.png) | `.`, `·`, ``, `` | `period`, `periodcentered`, ``, `` |
- | ![slash Pattern Diagram](img/s-slash.png) | `/`, ``, ``, `÷` | `slash`, ``, ``, `division` |
- | ![colon Pattern Diagram](img/s-colon.png) | `:`, ``, ``, `` | `colon`, ``, ``, `` |
- | ![semicolon Pattern Diagram](img/s-semicolon.png) | `;`, ``, ``, `` | `semicolon`, ``, ``, `` |
- | ![equal Pattern Diagram](img/s-equal.png) | `=`, ``, ``, `` | `equal`, ``, ``, `` |
- | ![question Pattern Diagram](img/s-question.png) | `?`, ``, `¿`, `` | `question`, ``, `questiondown`, `` |
- | ![at Pattern Diagram](img/s-at.png) | `@`, ``, ``, `` | `at`, ``, ``, `` |
- | ![backslash Pattern Diagram](img/s-backslash.png) | `\`, ``, ``, `` | `backslash`, ``, ``, `` |
+ | ![asterisk Pattern Diagram](img/s-asterisk.png) | `*`, `§`, , `×` | `asterisk`, `section`, , `multiply` |
+ | ![plus Pattern Diagram](img/s-plus.png) | `+`, `¶`, , `±` | `plus`, `paragraph`, , `plusminus` |
+ | ![comma Pattern Diagram](img/s-comma.png) | `,`, , ,  | `comma`, , ,  |
+ | ![minus Pattern Diagram](img/s-minus.png) | `-`, , ,  | `minus`, , ,  |
+ | ![period Pattern Diagram](img/s-period.png) | `.`, `·`, ,  | `period`, `periodcentered`, ,  |
+ | ![slash Pattern Diagram](img/s-slash.png) | `/`, , , `÷` | `slash`, , , `division` |
+ | ![colon Pattern Diagram](img/s-colon.png) | `:`, , ,  | `colon`, , ,  |
+ | ![semicolon Pattern Diagram](img/s-semicolon.png) | `;`, , ,  | `semicolon`, , ,  |
+ | ![equal Pattern Diagram](img/s-equal.png) | `=`, , ,  | `equal`, , ,  |
+ | ![question Pattern Diagram](img/s-question.png) | `?`, , `¿`,  | `question`, , `questiondown`,  |
+ | ![at Pattern Diagram](img/s-at.png) | `@`, , ,  | `at`, , ,  |
+ | ![backslash Pattern Diagram](img/s-backslash.png) | `\`, , ,  | `backslash`, , ,  |
  | ![asciicircum Pattern Diagram](img/s-asciicircum.png) | `^`, `«`, `»`, `°` | `asciicircum`, `guillemotleft`, `guillemotright`, `degree` |
- | ![grave Pattern Diagram](img/s-grave.png) | `` ` ``, ``, ``, `` | `grave`, ``, ``, `` |
- | ![bar Pattern Diagram](img/s-bar.png) | `\|`, ``, ``, `¦` | `bar`, ``, ``, `brokenbar` |
- | ![asciitilde Pattern Diagram](img/s-asciitilde.png) | `~`, ``, ``, `` | `asciitilde`, ``, ``, `` |
+ | ![grave Pattern Diagram](img/s-grave.png) |  `` ` ``, , ,  | `grave`, , ,  |
+ | ![bar Pattern Diagram](img/s-bar.png) | `|`, , , `¦` | `bar`, , , `brokenbar` |
+ | ![asciitilde Pattern Diagram](img/s-asciitilde.png) | `~`, , ,  | `asciitilde`, , ,  |
