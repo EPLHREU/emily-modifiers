@@ -10,7 +10,7 @@ This dictionary was created with the following goals in mind:
 
 ## Section
 
-To acheive this, for each stroke there are 4 main sections:
+To achieve this, for each stroke there are 4 main sections:
 1. Character (Purple)
 2. Switcher (Orange)
 3. Modifiers (Green)
@@ -20,7 +20,7 @@ To acheive this, for each stroke there are 4 main sections:
 
 ### Unique Ending
 
-Due to fingerspelling existing on the left hand, a uique chord with the right hand must be stroked.
+Due to fingerspelling existing on the left hand, a unique chord with the right hand must be stroked.
 This stroke is used to uniquely identify a dictionary entry chord from any other chord.
 By default this is `-LTZ`, this should be strokes with pinky on the `-Z` and ring finger for `-LT`.
 Due to physical and practical limitations, this key combination is both difficult to press, and also will generate clashes. 
@@ -66,7 +66,7 @@ Valid fingerspelling entries contain methods from multiple steno theories, hence
 | ![Letter M Diagram](img/m.png)        | `M`     |
 | ![Letter N Diagram](img/n.png)        | `N`     |
 | ![Letter O Diagram](img/o.png)        | `O`     |
-| ![Letter P Diagram](img/f.png)        | `P`     |
+| ![Letter P Diagram](img/p.png)        | `P`     |
 | ![Letter Q Diagram](img/q.png)        | `Q`     |
 | ![Letter R Diagram](img/r.png)        | `R`     |
 | ![Letter S Diagram](img/s.png)        | `S`     |
@@ -118,7 +118,7 @@ This will allow you to apply modifiers to symbols.
 However, please note:
 > Due to the way plover can operate and the way computers receive shortcut keys, when specifying a symbol, you only specify the key it is mapped to in the current keymap. This means that if the symbol is under shift, then you still need to use the shift modifier. For example, `control+shift+1` is not the same as `control+!`, you still need to add in the `shift` modifier.
 
-Additionally, while using the switcher for symbol specification, the `A` and `O` keys are used to specify variants of a perticular symbol, similar to the emily-symbols dictionary.`A` represents adding 1, while `O` represents adding 2 to the entries below.
+Additionally, while using the switcher for symbol specification, the `A` and `O` keys are used to specify variants of a particular symbol, similar to the emily-symbols dictionary.`A` represents adding 1, while `O` represents adding 2 to the entries below.
 
  | symbol pattern                                 | output | name |
  |------------------------------------------------|--------|------|
@@ -130,7 +130,7 @@ Additionally, while using the switcher for symbol specification, the `A` and `O`
  | ![quotedbl Pattern Diagram](img/s-quotedbl.png) | `"`, , ,  | `quotedbl`, , ,  |
  | ![numbersign Pattern Diagram](img/s-numbersign.png) | `#`, `®`, `©`,  | `numbersign`, `registered`, `copyright`,  |
  | ![dollar Pattern Diagram](img/s-dollar.png) | `$`, `€`, `¥`, `£` | `dollar`, `euro`, `yen`, `sterling` |
- | ![percent Pattern Diagram](img/s-dollar.png) | `%`, , ,  | `percent`, , ,  |
+ | ![percent Pattern Diagram](img/s-percent.png) | `%`, , ,  | `percent`, , ,  |
  | ![ampersand Pattern Diagram](img/s-ampersand.png) | `&`, , ,  | `ampersand`, , ,  |
  | ![parenleft Pattern Diagram](img/s-parenleft.png) | `(`, `<`, `[`, `{` | `parenleft`, `less`, `bracketleft`, `braceleft` |
  | ![parenright Pattern Diagram](img/s-parenright.png) | `)`, `>`, `]`, `}` | `parenright`, `greater`, `bracketright`, `braceright` |
