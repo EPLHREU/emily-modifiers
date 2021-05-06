@@ -4,106 +4,77 @@ import re
 # define your ender here
 uniqueEnders = ["LTZ"]
 
-# select the fingerspelling dictionary, i use magnum, but expect most others to use plover
-spellingMethod = "magnum"
 
 LONGEST_KEY = 1
 
 # fingerspelling dictionary entries for relevant theories 
 spelling = {
-        "magnum": {
-            "A"       : "a",
-            "PW"      : "b",
-            "KR"      : "c",
-            "TK"      : "d",
-            "E"       : "e",
-            "TP"      : "f",
-            "TKPW"    : "g",
-            "H"       : "h",
-            "AOEU"    : "i",
-            "SKWRAEU" : "j",
-            "K"       : "k",
-            "HR"      : "l",
-            "PH"      : "m",
-            "TPH"     : "n",
-            "O"       : "o",
-            "P"       : "p",
-            "KW"      : "q",
-            "R"       : "r",
-            "S"       : "s",
-            "T"       : "t",
-            "U"       : "u",
-            "SR"      : "v",
-            "W"       : "w",
-            "KP"      : "x",
-            "KWR"     : "y",
-            "STKPWHR" : "z",
-            },
-        "plover": {
-            "A"     : "a",
-            "PW"    : "b",
-            "KR"    : "c",
-            "TK"    : "d",
-            "E"     : "e",
-            "TP"    : "f",
-            "TKPW"  : "g",
-            "H"     : "h",
-            "EU"    : "i",
-            "SKWR"  : "j",
-            "K"     : "k",
-            "HR"    : "l",
-            "PH"    : "m",
-            "TPH"   : "n",
-            "O"     : "o",
-            "P"     : "p",
-            "KW"    : "q",
-            "R"     : "r",
-            "S"     : "s",
-            "T"     : "t",
-            "U"     : "u",
-            "SR"    : "v",
-            "W"     : "w",
-            "KP"    : "x",
-            "KWR"   : "y",
-            "STKPW" : "z",
-            }
+        "A"     : "a",
+        "PW"    : "b",
+        "KR"    : "c",
+        "TK"    : "d",
+        "E"     : "e",
+        "TP"    : "f",
+        "TKPW"  : "g",
+        "H"     : "h",
+        "EU"    : "i",
+        "AOEU"    : "i", # magnum
+        "SKWR"  : "j",
+        "SKWRAEU" : "j", # magnum
+        "K"     : "k",
+        "HR"    : "l",
+        "PH"    : "m",
+        "TPH"   : "n",
+        "O"     : "o",
+        "P"     : "p",
+        "KW"    : "q",
+        "R"     : "r",
+        "S"     : "s",
+        "T"     : "t",
+        "U"     : "u",
+        "SR"    : "v",
+        "W"     : "w",
+        "KP"    : "x",
+        "KWR"   : "y",
+        "STKPW" : "z",
+        "STKPWHR" : "z", # magnum 
         }
 
-# same as emily-symbols format, but mirrored for use on the left hand
+# same as emily-symbols format, but modified for use on the left hand
 symbols = {
-        "KH"    : ["tab", "backspace", "delete", "escape"],
+        "TR"    : ["tab", "delete", "backspace", "escape"],
         "KPWR"  : ["up", "left", "right", "down"],
-        "KPWHR" : ["pageup}", "home", "end", "pagedown}"],
-        ""      : ["", "return", "tab", "space"],
+        "KPWHR" : ["pageup", "end", "home", "pagedown"],
+        ""      : ["escape", "tab", "return", "space"],
 
         # typable symbols
-        "HR"     : ["exclam", "notsign", "", "exclamdown"],
-        "WH"     : ["quotedbl", "", "", ""],
-        "TKHR"   : ["numbersign", "copyright", "registered", ""],
-        "TPWR"   : ["dollar", "yen", "euro", "sterling"],
+        "HR"     : ["exclam", "", "notsign", "exclamdown"],
+        "PH"     : ["quotedbl", "", "", ""],
+        "TKHR"   : ["numbersign", "registered", "copyright", ""],
+        "KPWH"   : ["dollar", "euro", "yen", "sterling"],
         "PWHR"   : ["percent", "", "", ""],
-        "PWH"    : ["ampersand", "", "", ""],
+        "SKP"    : ["ampersand", "", "", ""],
         "H"      : ["apostrophe", "", "", ""],
-        "TPH"    : ["parenleft", "bracketleft", "less", "braceleft"],
-        "KWR"    : ["parenright", "bracketright", "greater", "braceright"],
-        "T"      : ["asterisk", "", "section", "multiply"],
-        "K"      : ["plus", "", "paragraph", "plusminus"],
+        "TPH"    : ["parenleft", "less", "bracketleft", "braceleft"],
+        "KWR"    : ["parenright", "greater", "bracketright", "braceright"],
+        "T"      : ["asterisk", "section", "", "multiply"],
+        "K"      : ["plus", "paragraph", "", "plusminus"],
         "W"      : ["comma", "", "", ""],
         "TP"     : ["minus", "", "", ""],
-        "R"      : ["period", "", "periodcentered", ""],
-        "PR"     : ["slash", "", "", "division"],
+        "R"      : ["period", "periodcentered", "", ""],
+        "WH"     : ["slash", "", "", "division"],
         "TK"     : ["colon", "", "", ""],
         "WR"     : ["semicolon", "", "", ""],
         "TKPW"   : ["equal", "", "", ""],
-        "PWL"    : ["question", "questiondown", "", ""],
+        "TPW"    : ["question", "", "questiondown", ""],
         "TKPWHR" : ["at", "", "", ""],
-        "WH"     : ["backslash", "", "", ""],
-        "KPR"    : ["asciicircum", "guillemotright", "guillemotleft", "degree"],
+        "PR"     : ["backslash", "", "", ""],
+        "KPR"    : ["asciicircum", "guillemotleft", "guillemotright", "degree"],
         "KW"     : ["underscore", "", "", "mu"],
         "P"      : ["grave", "", "", ""],
         "PW"     : ["bar", "", "", "brokenbar"],
-        "KPWH"   : ["asciitilde", "", "", ""]
-}
+        "TPWR"   : ["asciitilde", "", "", ""]
+        }
 
 def lookup(chord):
 
@@ -143,13 +114,13 @@ def lookup(chord):
         (pattern, variants, vowel2) = secondMatch.groups()
         # if the pattern is not recognised, error out
         if pattern not in symbols:
-           raise KeyError
+            raise KeyError
 
         # calculate the variant count
         variant = 0
-        if 'O' in variants:
-            variant = variant + 1
         if 'A' in variants:
+            variant = variant + 1
+        if 'O' in variants:
             variant = variant + 2
 
         # get the entry 
@@ -202,9 +173,9 @@ def lookup(chord):
             entry = shape + number + vowel2
 
             # check for entry in dictionary 
-            if entry not in spelling[spellingMethod]:
+            if entry not in spelling:
                 raise KeyError
-            character = spelling[spellingMethod][entry]
+            character = spelling[entry]
 
     # accumulate list of modifiers to be added to the character
     # may need to reorder?
