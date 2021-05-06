@@ -129,7 +129,7 @@ def lookup(chord):
             extract = entry[variant]
             # error out if the entry isn't applicable
             if extract == "":
-                return KeyError
+                raise KeyError
 
             character = extract
         else:
