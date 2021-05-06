@@ -160,3 +160,8 @@ This is a list of a few shortcuts I use often so you can see how it all comes to
 | ![workspace Pattern Diagram](img/workspace-right.png) | press `control+right` to move over a desktop on my mac |
 | ![sigint Pattern Diagram](img/sigint.png) | press `control+c` to interrupt a running program when programming |
 | ![sigquit Pattern Diagram](img/sigquit.png) | press `control+\` to stop a running program when programming |
+
+## Poster
+
+Check out the summary poster made by @sammdot for a nice one-page overview of how the whole dictionary works!
+[emily-modifiers-poster](emily-modifiers-poster.pdf)
