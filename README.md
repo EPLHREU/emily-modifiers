@@ -2,21 +2,23 @@
 
 ## Design
 
+This dictionary was created with the following goals in mind:
+
 - Have a consistent method to type (pretty much) every shortcut 
 - Do it all in only one stroke
 - Hackable and understandable to anyone who finds it useful :)
 
 ## Section
 
-There are 3 main sections:
-1. character
-2. switcher
-3. modifiers
-4. unique ending 
+To acheive this, for each stroke there are 4 main sections:
+1. Character (Purple)
+2. Switcher (Orange)
+3. Modifiers (Green)
+4. Unique ending (Red)
 
 ![Coloured Layout Diagram](img/layout.png)
 
-### unique ending
+### Unique Ending
 
 Due to fingerspelling existing on the left hand, a uique chord with the right hand must be stroked.
 This stroke is used to uniquely identify a dictionary entry chord from any other chord.
@@ -27,7 +29,7 @@ With Magnum as I currently use it, the `-LTZ` stroke clashes with only 71 entrie
 
 ![Ender Keys Layout Diagram](img/ender.png)
 
-### modifiers 
+### Modifiers 
 
 `FRPB` are used to specify the modifier keys to be used against the selected character. 
 These can all be used in any variation to produced the desired shortcut.  
@@ -40,7 +42,7 @@ These can all be used in any variation to produced the desired shortcut.
 | ![Alt Pattern Diagram](img/alt.png)         | `alt`     |
 
 
-### character
+### Character
 
 Character input is based on fingerspelling and takes up the whole left hand and vowels.
 Valid fingerspelling entries contain methods from multiple steno theories, hence why there are duplicate entries for some.
@@ -109,9 +111,9 @@ If `TP` (`F`) is also held, the number input will specify function number keys.
 | ![F11 Diagram](img/F11.png)    | `F11`    |
 | ![F12 Diagram](img/F12.png)    | `F12`    |
 
-### switcher
+### Switcher
 
-when `*` is used, the left bank will switch from fingerspelling letters, to a reflected and modified symbol dictionary. 
+When `*` is used, the left bank will switch from fingerspelling letters, to a reflected and modified symbol dictionary. 
 This will allow you to apply modifiers to symbols.
 However, please note:
 > Due to the way plover can operate and the way computers receive shortcut keys, when specifying a symbol, you only specify the key it is mapped to in the current keymap. This means that if the symbol is under shift, then you still need to use the shift modifier. For example, `control+shift+1` is not the same as `control+!`, you still need to add in the `shift` modifier.
