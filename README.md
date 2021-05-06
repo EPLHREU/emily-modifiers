@@ -148,3 +148,13 @@ Additionally, while using the switcher for symbol specification, the `A` and `O`
  | ![grave Pattern Diagram](img/s-grave.png) |  `` ` ``, , ,  | `grave`, , ,  |
  | ![bar Pattern Diagram](img/s-bar.png) | `|`, , , `¦` | `bar`, , , `brokenbar` |
  | ![asciitilde Pattern Diagram](img/s-asciitilde.png) | `~`, , ,  | `asciitilde`, , ,  |
+
+## A few favourites
+
+This is a list of a few shortcuts I use often so you can see how it all comes together. :)
+| Chord | Use |
+|-------|-----|
+| ![spotlight Pattern Diagram](img/spotlight.png) | press `cmd+space` to activate spotlight search on my mac |
+| ![workspace Pattern Diagram](img/workspace-right.png) | press `control+right` to move over a desktop on my mac |
+| ![sigint Pattern Diagram](img/sigint.png) | press `control+c` to interrupt a running program when programming |
+| ![sigquit Pattern Diagram](img/sigquit.png) | press `control+c\` to stop a running program when programming |
