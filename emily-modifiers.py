@@ -143,7 +143,7 @@ def lookup(chord):
         # AO is unused in finger spelling, thus used to disginguish numerical input
         if number == "AO" and vowel2 == "":
 
-            # left-hand bottom row conuts in binary for numbers 0-9
+            # left-hand bottom row counts in binary for numbers 0-9
             count = 0
             if "R" in shape:
                 count = count + 1
@@ -154,7 +154,7 @@ def lookup(chord):
             if "S" in shape:
                 count = count + 8
 
-            # if KP is being held as well, then user is inputting a Fx key - like alt+F4
+            # if TP is being held as well, then user is inputting a Fx key - like alt+F4
             function = False
             if "T" in shape and "P" in shape:
                 function = True
