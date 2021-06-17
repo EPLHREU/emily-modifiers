@@ -104,82 +104,86 @@ def lookup(chord):
 
     if ender not in uniqueEnders:
         raise KeyError
-
-    # use * to distinguish symbol input from numerical or character input
-    if "*" in seperator:
-        # symbol input
-        # extract the part of the symbol input
-        secondMatch = re.fullmatch(r'([STKPWHR]*)([AO]*)([EU]*)', pattern)
-        # into variables
-        (pattern, variants, vowel2) = secondMatch.groups()
-        # if the pattern is not recognised, error out
-        if pattern not in symbols:
-            raise KeyError
-
-        # calculate the variant count
-        variant = 0
-        if 'A' in variants:
-            variant = variant + 1
-        if 'O' in variants:
-            variant = variant + 2
-
-        # get the entry 
-        entry = symbols[pattern]
-        if type(entry) == list:
-            extract = entry[variant]
-            # error out if the entry isn't applicable
-            if extract == "":
-                raise KeyError
-
-            character = extract
-        else:
-            character = entry
+ 
+    if pattern == "":
+        # just modifiers pressed on their own, used a lot in windows apparently
+        character = ""
     else:
-        # numbers or letters
-        # extract relevant parts of the stroke
-        secondMatch = re.fullmatch(r'([STKPWHR]*)([AO]*)([-EU]*)', pattern)
-        (shape, number, vowel2) = secondMatch.groups()
+        # use * to distinguish symbol input from numerical or character input
+        if "*" in seperator:
+            # symbol input
+            # extract the part of the symbol input
+            secondMatch = re.fullmatch(r'([STKPWHR]*)([AO]*)([EU]*)', pattern)
+            # into variables
+            (pattern, variants, vowel2) = secondMatch.groups()
+            # if the pattern is not recognised, error out
+            if pattern not in symbols:
+                raise KeyError
 
-        # AO is unused in finger spelling, thus used to disginguish numerical input
-        if number == "AO" and vowel2 == "":
+            # calculate the variant count
+            variant = 0
+            if 'A' in variants:
+                variant = variant + 1
+            if 'O' in variants:
+                variant = variant + 2
 
-            # left-hand bottom row counts in binary for numbers 0-9
-            count = 0
-            if "R" in shape:
-                count = count + 1
-            if "W" in shape:
-                count = count + 2
-            if "K" in shape:
-                count = count + 4
-            if "S" in shape:
-                count = count + 8
-
-            # if TP is being held as well, then user is inputting a Fx key - like alt+F4
-            function = False
-            if "T" in shape and "P" in shape:
-                function = True
-
-            # add the 'F' if F number
-            if function:
-                character = "F" + str(count)
-                if count > 12:
+            # get the entry 
+            entry = symbols[pattern]
+            if type(entry) == list:
+                extract = entry[variant]
+                # error out if the entry isn't applicable
+                if extract == "":
                     raise KeyError
+
+                character = extract
             else:
-                if count > 9:
-                    raise KeyError
-                character = str(count)
+                character = entry
         else:
-            # finger spelling input
-            entry = shape + number + vowel2
+            # numbers or letters
+            # extract relevant parts of the stroke
+            secondMatch = re.fullmatch(r'([STKPWHR]*)([AO]*)([-EU]*)', pattern)
+            (shape, number, vowel2) = secondMatch.groups()
 
-            # check for entry in dictionary 
-            if entry not in spelling:
-                raise KeyError
-            character = spelling[entry]
+            # AO is unused in finger spelling, thus used to disginguish numerical input
+            if number == "AO" and vowel2 == "":
 
-            # if there is no entry, pass the error
-            if character == "":
-                raise KeyError
+                # left-hand bottom row counts in binary for numbers 0-9
+                count = 0
+                if "R" in shape:
+                    count = count + 1
+                if "W" in shape:
+                    count = count + 2
+                if "K" in shape:
+                    count = count + 4
+                if "S" in shape:
+                    count = count + 8
+
+                # if TP is being held as well, then user is inputting a Fx key - like alt+F4
+                function = False
+                if "T" in shape and "P" in shape:
+                    function = True
+
+                # add the 'F' if F number
+                if function:
+                    character = "F" + str(count)
+                    if count > 12:
+                        raise KeyError
+                else:
+                    if count > 9:
+                        raise KeyError
+                    character = str(count)
+            else:
+                # finger spelling input
+                entry = shape + number + vowel2
+
+                # check for entry in dictionary 
+                if entry not in spelling:
+                    raise KeyError
+                character = spelling[entry]
+
+                # if there is no entry, pass the error
+                if character == "":
+                    raise KeyError
 
     # accumulate list of modifiers to be added to the character
     # may need to reorder?
