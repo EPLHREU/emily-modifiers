@@ -131,6 +131,7 @@ Additionally, while using the switcher for symbol specification, the `A` and `O`
  | ![numbersign Pattern Diagram](img/s-numbersign.png) | `#`, `®`, `©`,  | `numbersign`, `registered`, `copyright`,  |
  | ![dollar Pattern Diagram](img/s-dollar.png) | `$`, `€`, `¥`, `£` | `dollar`, `euro`, `yen`, `sterling` |
  | ![percent Pattern Diagram](img/s-percent.png) | `%`, , ,  | `percent`, , ,  |
+ | ![apostrophe Pattern Diagram](img/s-apostrophe.png) | `'`, , , | `apostrophe`, , , |
  | ![ampersand Pattern Diagram](img/s-ampersand.png) | `&`, , ,  | `ampersand`, , ,  |
  | ![parenleft Pattern Diagram](img/s-parenleft.png) | `(`, `<`, `[`, `{` | `parenleft`, `less`, `bracketleft`, `braceleft` |
  | ![parenright Pattern Diagram](img/s-parenright.png) | `)`, `>`, `]`, `}` | `parenright`, `greater`, `bracketright`, `braceright` |
