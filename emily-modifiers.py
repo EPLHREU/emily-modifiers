@@ -44,7 +44,7 @@ spelling = {
 symbols = {
         "TR"    : ["tab", "delete", "backspace", "escape"],
         "KPWR"  : ["up", "left", "right", "down"],
-        "KPWHR" : ["pageup", "end", "home", "pagedown"],
+        "KPWHR" : ["page_up", "end", "home", "page_down"],
         ""      : ["", "tab", "return", "space"],
 
         # typable symbols
