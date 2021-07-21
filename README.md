@@ -22,7 +22,7 @@ To achieve this, for each stroke there are 4 main sections:
 
 Due to fingerspelling existing on the left hand, a unique chord with the right hand must be stroked.
 This stroke is used to uniquely identify a dictionary entry chord from any other chord.
-By default this is `-LTZ`, this should be strokes with pinky on the `-Z` and ring finger for `-LT`.
+By default this is `-LTZ`, this should be stroked with pinky on the `-Z` and ring finger for `-LT`.
 Due to physical and practical limitations, this key combination is both difficult to press, and also will generate clashes. 
 Please check with your dictionary to see what clashes may occur, and potentially change what this stroke is.
 With Magnum as I currently use it, the `-LTZ` stroke clashes with only 71 entries, most of which are misstroke entries, so I don't have to worry about it too much. 
