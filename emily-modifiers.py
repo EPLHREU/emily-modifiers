@@ -42,7 +42,7 @@ spelling = {
 
 # same as emily-symbols format, but modified for use on the left hand
 symbols = {
-        "TR"    : ["tab", "delete", "backspace", "escape"],
+        "TR"    : ["tab", "backspace", "delete", "escape"],
         "KPWR"  : ["up", "left", "right", "down"],
         "KPWHR" : ["page_up", "home", "end", "page_down"],
         ""      : ["", "tab", "return", "space"],
