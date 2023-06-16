@@ -122,7 +122,7 @@ Additionally, while using the switcher for symbol specification, the `A` and `O`
 
  | symbol pattern                                 | output | name |
  |------------------------------------------------|--------|------|
- | ![tab Pattern Diagram](img/s-tab.png)          | `tab`, `delete`, `backspace`, `escape` | `tab`, `delete`, `backspace`, `escape` |
+ | ![tab Pattern Diagram](img/s-tab.png)          | `tab`, `backspace`, `delete`, `escape` | `tab`, `backspace`, `delete`, `escape` |
  | ![arrow Pattern Diagram](img/s-arrow.png) | `up`, `left`, `right`, `down` | `up`, `left`, `right`, `down` |
  | ![page Pattern Diagram](img/s-page.png) | `pageup`, `home`, `end`, `pagedown` | `pageup`, `home`, `end`, `pagedown` |
  | ![blank Pattern Diagram](img/s-blank.png) | `escape`, `tab`, `return`, ` ` | `escape`, `tab`, `return`, `space` |
